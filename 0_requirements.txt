@@ -1,17 +1,19 @@
+Workshop Requirements
 
-Requirements for the workshop
+    1. Laptop with internet access
 
-1) A laptop
+    2. Server Connectivity
+        Windows: Windows PowerShell or Windows Subsystem for Linux (WSL)*.
+        Linux/macOS: Terminal.
 
-2) To connect to the server
+    3. File Transfer
+        FileZilla or any other SFTP client.
+        Download FileZilla
 
-Laptop with Windows: Windows PowerShell or Windows Subsystems for Linux
-Laptop with Linux or MacOS: Terminal
+    4. Online Analysis via BV-BRC
 
-3) To download files from the server
-FileZilla or other SFTP client.
-https://filezilla-project.org/download.php?type=client
+        Please register at BV-BRC
+        https://www.bv-brc.org/
 
-4) To perform analysis online uisng BV-BRC
-Register on BV-BRC
-https://www.bv-brc.org/
+
+* To install WSL on Windows 11, open PowerShell or Command Prompt as administrator, run wsl --install, and restart your computer. This command enables required features and installs Ubuntu by default. After rebooting, set up your Linux username and password.

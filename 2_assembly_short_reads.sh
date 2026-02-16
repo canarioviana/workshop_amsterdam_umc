@@ -1,8 +1,8 @@
 #!/bin/bash
-# Bash script for bacterial genome assembly from short-read sequencing data (end-to-end worflow)
+# Bash script for bacterial genome assembly from short-read sequencing data
 #
 # Author: Marcus Vinicius Canário Viana
-# Date: 16/102/2025
+# Date: 16/02/2025
 # Repository: https://github.com/canarioviana/workshop_amsterdam_umc
 #
 
@@ -46,10 +46,10 @@
 cd /mnt/4tb_1/workshop_umc
 
 # Create assembly directory
-mkdir short_reads
+mkdir -p short_reads/groupname
 
 # Go to assembly directory
-cd short_reads
+cd short_reads/groupname
 
 ############################################################
 ## 1) Sequencing reads directory and files

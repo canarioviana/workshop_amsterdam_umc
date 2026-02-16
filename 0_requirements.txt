@@ -1,0 +1,17 @@
+
+Requirements for the workshop
+
+1) A laptop
+
+2) To connect to the server
+
+Laptop with Windows: Windows PowerShell or Windows Subsystems for Linux
+Laptop with Linux or MacOS: Terminal
+
+3) To download files from the server
+FileZilla or other SFTP client.
+https://filezilla-project.org/download.php?type=client
+
+4) To perform analysis online uisng BV-BRC
+Register on BV-BRC
+https://www.bv-brc.org/

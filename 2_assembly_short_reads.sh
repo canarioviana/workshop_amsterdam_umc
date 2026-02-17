@@ -452,6 +452,9 @@ gtdbtk classify_wf \
 --genome_dir 6_assemblies \
 --out_dir 8_gtdbtk
 
+# Deactivate Conda environment
+conda deactivate
+
 # Copy and rename output files
 if [ -f "8_gtdbtk/gtdbtk.bac120.summary.tsv" ]; then
     cp 8_gtdbtk/gtdbtk.bac120.summary.tsv 8_gtdbtk_bacteria.tsv
@@ -466,9 +469,6 @@ zip -r 8_gtdbtk.zip 8_gtdbtk
 # Delete the output directory
 rm -r 8_gtdbtk
 
-# Deactivate Conda environment
-conda deactivate
-
 ############################################################
 ## TYGS
 
@@ -480,6 +480,7 @@ conda deactivate
 
 # Tetra Correlation Search (TCS)
 # https://jspecies.ribohost.com/jspeciesws/#analyse
+
 
 ############################################################
 ## 9) Plasmid identification
@@ -655,6 +656,9 @@ zip -r 10_assemblies_for_analysis.zip 10_assemblies_for_analysis
 zip -r 9_mobsuite.zip 9_mobsuite
 # Delete output file
 rm -r 9_mobsuite
+
+# Rename plasmid AF922 to chromosome 2
+sed -i 's/plasmid-name=pAF922/chromosome=2/' 10_assemblies_for_analysis/*.fsa
 
 # In case of a novel plasmid, you will have to change its temporary name given by MOB-suite to an appropriate and shorter name.
 

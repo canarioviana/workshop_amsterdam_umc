@@ -1,5 +1,5 @@
 # Connect to the server (Windows PowerShell, Linux terminal, MacOS terminal)
-ssh username@150.164.37.231
+ssh username@ipaddress
 # Enter "yes" to save the server identification key to you computer
 
 # Create working directory

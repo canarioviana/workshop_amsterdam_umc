@@ -2,7 +2,7 @@ Workshop Requirements
 
     1. Laptop with internet access
 
-    2. A text editor that shows colors according to syntax
+    2. A text editor that shows text colors according to language syntax
         Notepad++: https://notepad-plus-plus.org/downloads/v8.9.2/
         Sublime Text: https://www.sublimetext.com/
 
@@ -12,9 +12,15 @@ Workshop Requirements
 
     4. File Transfer
         FileZilla or any other SFTP client.
-        Download FileZilla
+        FileZilla: https://filezilla-project.org/download.php
 
-    5. Online Analysis via BV-BRC
+    5. Gene phylogeny
+        MEGA: https://www.megasoftware.net/
+    
+    6. Downstream pangenome analysis
+        R Studio: https://posit.co/download/rstudio-desktop/
+
+    7. Online Analysis via BV-BRC
 
         Please register at BV-BRC
         https://www.bv-brc.org/

@@ -2,15 +2,19 @@ Workshop Requirements
 
     1. Laptop with internet access
 
-    2. Server Connectivity
+    2. A text editor that shows colors according to syntax
+        Notepad++: https://notepad-plus-plus.org/downloads/v8.9.2/
+        Sublime Text: https://www.sublimetext.com/
+
+    3. Server Connectivity
         Windows: Windows PowerShell or Windows Subsystem for Linux (WSL)*.
         Linux/macOS: Terminal.
 
-    3. File Transfer
+    4. File Transfer
         FileZilla or any other SFTP client.
         Download FileZilla
 
-    4. Online Analysis via BV-BRC
+    5. Online Analysis via BV-BRC
 
         Please register at BV-BRC
         https://www.bv-brc.org/

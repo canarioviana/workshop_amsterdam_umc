@@ -3,9 +3,9 @@ ssh username@ipaddress
 # Enter "yes" to save the server identification key to you computer
 
 # Create working directory
-mkdir /mnt/4tb_1/workshop_umc/<group_name>/linux_terminal
+mkdir /mnt/4tb_1/workshop_umc/username/linux_terminal
 # Go to working directory
-cd /mnt/4tb_1/workshop_umc/<group_name>/linux_terminal
+cd /mnt/4tb_1/workshop_umc/username/linux_terminal
 
 # Print a message in the terminal
 echo "Hello World!"
@@ -93,5 +93,6 @@ ls
 # Delete the directory
 rm -r directory1 # The flag "-r" is required to delete directories
 
-# Go to the main directory
-cd /mnt/4tb_1/workshop_umc/
+############################################################
+# Back to the main user directory
+cd /mnt/4tb_1/workshop_umc/username

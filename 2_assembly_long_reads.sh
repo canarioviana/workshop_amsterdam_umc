@@ -16,9 +16,9 @@
 ## 2) Raw reads quality assessment
     # NanoPlot
 ## 3) Raw reads trimming
-    # Chopper
+    # Fastplong
 ## 4) Trimmed reads quality assessment
-    ## NanoPlot
+    # NanoPlot
 ## 5) De novo assembly
     # Flye
 ## 6) Organization of de novo assembly files
@@ -41,14 +41,17 @@
 ## 0) Working directory
 ############################################################
 
+# Connect to the server
+ssh user@ipaddress
+
 # Go to workshop directory
 cd /mnt/4tb_1/workshop_umc
 
 # Create assembly directory
-mkdir -p long_reads/<groupname>
+mkdir -p username/long_reads
 
 # Go to assembly directory
-cd long_reads/<groupname>
+cd username/long_reads
 
 
 ############################################################
@@ -525,6 +528,8 @@ rm -r 8_gtdbtk
 # Tetra Correlation Search (TCS)
 # https://jspecies.ribohost.com/jspeciesws/#analyse
 
+# Session code for previous result: F6E4DCCF5CDC31D53C1C
+
 ############################################################
 ## 9) Plasmid identification
 ############################################################
@@ -708,9 +713,14 @@ sed -i 's/pAA693/pl_URK_4a/' 10_assemblies_for_analysis/N116.fsa
 sed -i 's/pAA694/pl_URK_4b/' 10_assemblies_for_analysis/N116.fsa
 sed -i 's/pAA696/pl_URK_4c/' 10_assemblies_for_analysis/N116.fsa
 
-
-
 # In case of a novel plasmid, you will have to change its temporary name given by MOB-suite to an appropriate and shorter name.
+
+
+############################################################
+# Back to the main user directory
+
+cd /mnt/4tb_1/workshop_umc/username
+
 
 ############################################################
 ## Genome submission to GenBank

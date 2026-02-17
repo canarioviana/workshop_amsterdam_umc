@@ -2,7 +2,7 @@
 # Bash script for bacterial genome assembly from short-read sequencing data
 #
 # Author: Marcus Vinicius Canário Viana
-# Date: 16/02/2025
+# Date: 17/02/2025
 # Repository: https://github.com/canarioviana/workshop_amsterdam_umc
 #
 
@@ -44,14 +44,17 @@
 ## 0) Working directory
 ############################################################
 
+# Connect to the server
+ssh username@ipaddress
+
 # Go to workshop directory
 cd /mnt/4tb_1/workshop_umc
 
 # Create assembly directory
-mkdir -p short_reads/groupname
+mkdir -p username/short_reads
 
 # Go to assembly directory
-cd short_reads/groupname
+cd username/short_reads
 
 ############################################################
 ## 1) Sequencing reads directory and files
@@ -661,6 +664,12 @@ rm -r 9_mobsuite
 sed -i 's/plasmid-name=pAF922/chromosome=2/' 10_assemblies_for_analysis/*.fsa
 
 # In case of a novel plasmid, you will have to change its temporary name given by MOB-suite to an appropriate and shorter name.
+
+
+############################################################
+# Back to the main user directory
+cd /mnt/4tb_1/workshop_umc/username
+
 
 ############################################################
 ## Genome submission to GenBank

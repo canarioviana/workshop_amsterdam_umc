@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bash script for bacterial genome assembly from short-read sequencing data
+# Bash script for bacterial genome assembly from Illumina paired-end sequencing data
 #
 # Author: Marcus Vinicius Canário Viana
 # Date: 17/02/2025

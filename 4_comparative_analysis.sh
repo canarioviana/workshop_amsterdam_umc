@@ -324,9 +324,9 @@ conda deactivate
 mv GC*/ ../../4_genome_annotation
 # Go to main directory
 cd ../../
-# Rename files according to the file 2_selected_genomes.tsv
-parallel --colsep "\t" -a 2_selected_genomes.tsv mv 4_genome_annotation/{1} 4_genome_annotation/{2}
-parallel --colsep "\t" -a 2_selected_genomes.tsv rename 's/{1}/{2}/' 4_genome_annotation/{2}/*
+# Rename files according to the file 3_selected_genomes.tsv
+parallel --colsep "\t" -a 3_selected_genomes.tsv mv 4_genome_annotation/{1} 4_genome_annotation/{2}
+parallel --colsep "\t" -a 3_selected_genomes.tsv rename 's/{1}/{2}/' 4_genome_annotation/{2}/*
 # Delete temporary files and directory
 rm -r genome_data.zip ncbi_dataset README.md md5sum.txt
 

@@ -126,7 +126,7 @@ rm -r 12_amrfinder
 
 ############################################################
 ## ResFinder (Antimicrobial resistance prediction)
-# http://genepi.food.dtu.dk/resfinder
+# https://genepi.food.dtu.dk/resfinder
 
 ############################################################
 ## RGI (Antimicrobial resistance prediction)

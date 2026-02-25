@@ -640,7 +640,7 @@ for assembly in 10_assemblies_for_analysis/*.fsa; do
             # Inform sample and contig
             echo Sample: "$sample" - Contig: "$new_contig_id"
             # Replace old header with the new one
-            sed -i "s/^>${contig_id}/>${new_contig_id}/" $assembly
+            sed -i "s/^>${contig_id}\$/>${new_contig_id}/" "$assembly"
         fi
         # Conditional: chromosome contig
         if [ "$molecule_type" == "chromosome" ]; then
@@ -649,7 +649,7 @@ for assembly in 10_assemblies_for_analysis/*.fsa; do
             # Inform sample and contig
             echo Sample: "$sample" - Contig: "$new_contig_id"
             # Replace old header with the new one
-            sed -i "s/^>${contig_id}/>${new_contig_id}/" $assembly
+            sed -i "s/^>${contig_id}\$/>${new_contig_id}/" "$assembly"
         fi
     done
 done
